@@ -4,16 +4,29 @@ public class Puffendui extends Hogwarts {
     int loyalty;
     int honesty;
 
-    public Puffendui(int industriousness, int loyalty, int honesty) {
-        if (industriousness < 0 || industriousness > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (loyalty < 0 || loyalty > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (honesty < 0 || honesty > 100) {
-            System.out.println(" Неверное знаяение");
-        }
+    @Override
+    public String toString() {
+        return "я студент факультета Puffendui: " + fullName + ", мои качества: " +
+                "industriousness=" + industriousness +
+                ", loyalty=" + loyalty +
+                ", honesty=" + honesty +
+                ", magic=" + magic +
+                ", teleport=" + teleport;
+    }
+
+    public Puffendui(String fullName, int magic, int teleport, int industriousness, int loyalty, int honesty) {
+//        if (industriousness < 0 || industriousness > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (loyalty < 0 || loyalty > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (honesty < 0 || honesty > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+        this.fullName = fullName;
+        this.magic = magic;
+        this.teleport = teleport;
         this.industriousness = industriousness;
         this.loyalty = loyalty;
         this.honesty = honesty;

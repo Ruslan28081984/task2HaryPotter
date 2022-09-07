@@ -1,5 +1,15 @@
 public class Gryffindor extends Hogwarts {
 
+    @Override
+    public String toString() {
+        return "я студент факультета Gryffindor: " + fullName + ", мои качества: " +
+                "honor=" + honor +
+                ", nobility=" + nobility +
+                ", bravery=" + bravery +
+                ", magic=" + magic +
+                ", teleport=" + teleport;
+    }
+
     private int honor;
     private int nobility;
     private int bravery;
@@ -7,16 +17,18 @@ public class Gryffindor extends Hogwarts {
 
 
     public Gryffindor(String fullName,int magic,int teleport, int honor, int nobility, int bravery) {
-        if (honor < 0 || honor > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (nobility < 0 || nobility > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (bravery < 0 || bravery > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-
+//        if (honor < 0 || honor > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (nobility < 0 || nobility > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (bravery < 0 || bravery > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+        this.fullName = fullName;
+        this.magic = magic;
+        this.teleport = teleport;
         this.honor = honor;
         this.nobility = nobility;
         this.bravery = bravery;

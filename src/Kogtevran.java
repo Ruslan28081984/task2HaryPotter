@@ -5,21 +5,34 @@ public class Kogtevran extends Hogwarts {
     int creativity;
     int wit;
 
-    public Kogtevran(int mind, int wisdom, int creativity, int wit) {
+    @Override
+    public String toString() {
+        return "я студент: факультета Kogtevran " + fullName + ", мои качества: " +
+                "mind=" + mind +
+                ", wisdom=" + wisdom +
+                ", creativity=" + creativity +
+                ", wit=" + wit +
+                ", magic=" + magic +
+                ", teleport=" + teleport;
+    }
 
-        if (mind < 0 || mind > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (wisdom < 0 || wisdom > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (creativity < 0 || creativity > 100) {
-            System.out.println(" Неверное знаяение");
-        }
-        if (wit< 0 || wit > 100) {
-            System.out.println(" Неверное знаяение");
-        }
+    public Kogtevran(String fullName, int magic, int teleport, int mind, int wisdom, int creativity, int wit) {
 
+//        if (mind < 0 || mind > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (wisdom < 0 || wisdom > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (creativity < 0 || creativity > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+//        if (wit< 0 || wit > 100) {
+//            System.out.println(" Неверное знаяение");
+//        }
+        this.fullName = fullName;
+        this.magic = magic;
+        this.teleport = teleport;
         this.mind = mind;
         this.wisdom = wisdom;
         this.creativity = creativity;

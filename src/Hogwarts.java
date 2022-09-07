@@ -1,5 +1,12 @@
 public abstract class Hogwarts {
-     String fullName;
+    @Override
+    public String toString() {
+        return "я студент:" + fullName + ", мои качества: " +
+                ", magic=" + magic +
+                ", teleport=" + teleport;
+    }
+
+    String fullName;
      int magic;
      int teleport;
 

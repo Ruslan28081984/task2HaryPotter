@@ -1,12 +1,25 @@
 public class Slizerin extends Hogwarts {
 
-    int trick;
+    @Override
+    public String toString() {
+        return "я студент: факультета Slizerin " + fullName + ", мои качества: " +
+                "trick=" + trick +
+                ", determination=" + determination +
+                ", ambition=" + ambition +
+                ", resourcefulness=" + resourcefulness +
+                ", authoritativeness=" + authoritativeness +
+                ", magic=" + magic +
+                ", teleport=" + teleport ;
+    }
 
+    int trick;
     int determination;
     int ambition;
     int resourcefulness;
     int authoritativeness;
-    public Slizerin(int trick, int determination, int ambition, int resourcefulness, int authoritativeness) {
+
+
+    public Slizerin(String fullName, int magic, int teleport, int trick, int determination, int ambition, int resourcefulness, int authoritativeness) {
 
         if (trick < 0 || trick > 100) {
             System.out.println(" Неверное знаяение");
@@ -23,7 +36,9 @@ public class Slizerin extends Hogwarts {
         if (authoritativeness < 0 || authoritativeness > 100) {
             System.out.println(" Неверное знаяение");
         }
-
+        this.fullName = fullName;
+        this.magic = magic;
+        this.teleport = teleport;
         this.trick = trick;
         this.determination = determination;
         this.ambition = ambition;
