@@ -6,7 +6,7 @@ public class Gryffindor extends Hogwarts {
 
 
 
-    public Gryffindor(int honor, int nobility, int bravery) {
+    public Gryffindor(String fullName,int magic,int teleport, int honor, int nobility, int bravery) {
         if (honor < 0 || honor > 100) {
             System.out.println(" Неверное знаяение");
         }
